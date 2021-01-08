@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: fit-content;
+    padding: 1em;
+    border-left: solid 7px transparent; 
+    border-right: solid 7px transparent; 
+    border-bottom: solid 7px #fff;
+    filter: drop-shadow(0 0 30px #333);
+}
+h1 {
+    font-weight: 300;
+    padding: 1em;
+}
+.section {
+    align-items: flex-start;
+    padding: 0.5em;
+}
+button {
+    background-color: rgb(92, 92, 233);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+}
+input {
+    padding: 0.5em;
+    width: -webkit-fill-available;
+    border: 2px solid;
+}
+label {
+    opacity: 0.6;
+    padding: 0.2em;
+}
+.hide {
+    visibility: hidden;
+    color: crimson;
+    opacity: 0.7;
+}
+.section input:focus {
+	outline: 0;
+    border-color: #777;
+}
+.section.success input {
+    border-color: green;
+}
+.section.error input {
+    border-color: crimson;
+}
+.section.error div.hide {
+    visibility: visible;
+}
+.section.default input {
+    border-color: #777;
+}

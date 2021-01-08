@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Register With Us</h1>
+            <div class="login">
+                <form class="form" id="form">
+                    <div class="section">
+                        <label for="username">Username</label>
+                        <br>
+                        <input type="text" id="username" placeholder="Enter Username">
+                        <div class="hide" id="namehid">Username must be at least 3 charecters</div>
+                    </div>
+                    <div class="section">
+                        <label for="mail">Email</label>
+                        <br>
+                        <input type="text" id="mail" placeholder="Enter email">
+                        <div class="hide" id="mailhid">Email is not valid</div>
+                    </div>
+                    <div class="section">
+                        <label for="pass">Password</label>
+                        <br>
+                        <input type="password" id="pass" placeholder="Enter Password">
+                        <div class="hide" id="passhid">Password must be at least 6 charecters</div>
+                    </div>
+                    <div class="section">
+                        <label for="pass2">Confirm Password</label>
+                        <br>
+                        <input type="password" id="pass2" name="pswdconf" placeholder="Enter Password again">
+                        <div class="hide" id="pass2hid">Password should match</div>
+                    </div>  
+                    <button type="submit" value="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="form_script.js"></script>
+    </body>
+</html>
